@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50" fill="none">
+  <style>
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .badge {
+      transform-origin: 25px 25px;
+      animation: pulse 3s ease-in-out infinite;
+    }
+  </style>
+  <g class="badge">
+    <!-- Floppy Body (Transparent with White Outlines) -->
+    <path d="M 6,4 L 38,4 L 46,12 L 46,44 L 6,44 Z" stroke="#ffffff" stroke-width="1.8" fill="none" />
+    <path d="M 7,43 L 7,5 L 37,5" stroke="#ffffff" stroke-width="0.8" fill="none" />
+    <path d="M 45,13 L 45,43 L 7,43" stroke="#8a8a8c" stroke-width="1" fill="none" />
+
+    <!-- Sliding Shutter (White with Fuchsia Cutout) -->
+    <rect x="14" y="6" width="14" height="10" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    <rect x="18" y="8" width="6" height="5" fill="#ff007f" />
+
+    <!-- Label (White Fill for readability) -->
+    <rect x="10" y="20" width="30" height="20" fill="#ffffff" stroke="#ff007f" stroke-width="1" />
+    <rect x="11" y="21" width="28" height="2" fill="#ff007f" />
+
+    <!-- Year Text -->
+    <text x="25" y="34" font-family="'Courier New', Courier, monospace" font-size="9" font-weight="bold" fill="#ff007f" text-anchor="middle">2025</text>
+
+    <!-- Write protect hole -->
+    <rect x="38" y="38" width="4" height="4" fill="#ff007f" />
+  </g>
+</svg>

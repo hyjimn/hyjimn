@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 160" width="280" height="160" fill="none">
+  <!-- CSS Animations & Styles -->
+  <style>
+    @keyframes float-csharp {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    @keyframes float-python {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+    .pill-csharp {
+      animation: float-csharp 3s ease-in-out infinite;
+    }
+    .pill-python {
+      animation: float-python 3s ease-in-out infinite 0.7s;
+    }
+  </style>
+
+  <!-- Outer Bevel Shell (Transparent with White Bevel) -->
+  <rect x="1" y="1" width="278" height="158" stroke="#ffffff" stroke-width="2" rx="4" />
+  <rect x="2" y="2" width="276" height="156" stroke="#8a8a8c" stroke-width="0.8" rx="3" fill="none" />
+
+  <!-- Title Bar (Solid White) -->
+  <rect x="4" y="4" width="272" height="18" fill="#ffffff" />
+  <text x="10" y="17" font-family="'MS Sans Serif', Arial, sans-serif" font-size="9" font-weight="bold" fill="#ff007f">Languages.dll</text>
+
+  <!-- Close [X] button -->
+  <g transform="translate(260, 8)">
+    <rect x="0" y="0" width="12" height="10" fill="#eeeeee" stroke="#8a8a8c" stroke-width="0.8" />
+    <path d="M 3,2 L 9,8 M 9,2 L 3,8" stroke="#ff007f" stroke-width="1.2" />
+  </g>
+
+  <!-- C# Pill (Floating Transparent Beveled Button) -->
+  <g class="pill-csharp">
+    <g transform="translate(16, 40)">
+      <!-- Button Base with Bevel -->
+      <rect x="0" y="0" width="115" height="34" stroke="#ffffff" stroke-width="1.5" fill="none" />
+      <line x1="0" y1="33" x2="115" y2="33" stroke="#8a8a8c" stroke-width="1" />
+      <line x1="114" y1="0" x2="114" y2="34" stroke="#8a8a8c" stroke-width="1" />
+
+      <!-- C# Pixel Logo (Fucsia) -->
+      <g transform="translate(6, -1)">
+        <!-- C -->
+        <rect x="12" y="11" width="7" height="2" fill="#ff007f" />
+        <rect x="10" y="13" width="2" height="6" fill="#ff007f" />
+        <rect x="12" y="19" width="7" height="2" fill="#ff007f" />
+        <!-- # -->
+        <rect x="23" y="10" width="1.5" height="12" fill="#ff007f" />
+        <rect x="26.5" y="10" width="1.5" height="12" fill="#ff007f" />
+        <rect x="21" y="13" width="9" height="1.5" fill="#ff007f" />
+        <rect x="21" y="17" width="9" height="1.5" fill="#ff007f" />
+      </g>
+      
+      <!-- Text -->
+      <text x="80" y="21" font-family="'MS Sans Serif', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">C#</text>
+    </g>
+  </g>
+
+  <!-- Python Pill (Floating Transparent Beveled Button) -->
+  <g class="pill-python">
+    <g transform="translate(149, 40)">
+      <!-- Button Base with Bevel -->
+      <rect x="0" y="0" width="115" height="34" stroke="#ffffff" stroke-width="1.5" fill="none" />
+      <line x1="0" y1="33" x2="115" y2="33" stroke="#8a8a8c" stroke-width="1" />
+      <line x1="114" y1="0" x2="114" y2="34" stroke="#8a8a8c" stroke-width="1" />
+
+      <!-- Python Pixel Logo (Fucsia/White) -->
+      <g transform="translate(12, 9)">
+        <path d="M 4,2 L 10,2 A 2,2 0 0 1 12,4 L 12,7 L 9,7 L 9,5 L 5,5 L 5,8 L 8,8 A 2,2 0 0 1 10,10 L 10,11 L 8,11 L 8,10 L 4,10 A 2,2 0 0 1 2,8 L 2,4 A 2,2 0 0 1 4,2 Z" fill="#ff007f" />
+        <circle cx="5" cy="3.5" r="0.7" fill="#ffffff" />
+        <path d="M 8,14 L 2,14 A 2,2 0 0 1 0,12 L 0,9 L 3,9 L 3,11 L 7,11 L 7,8 L 4,8 A 2,2 0 0 1 2,6 L 2,5 L 4,5 L 4,6 L 8,6 A 2,2 0 0 1 10,8 L 10,12 A 2,2 0 0 1 8,14 Z" fill="#ffffff" />
+        <circle cx="7" cy="12.5" r="0.7" fill="#ff007f" />
+      </g>
+      
+      <!-- Text -->
+      <text x="80" y="21" font-family="'MS Sans Serif', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Python</text>
+    </g>
+  </g>
+
+  <!-- Inset Text Console at Bottom (Transparent fill with white border) -->
+  <g transform="translate(16, 92)">
+    <rect x="0" y="0" width="248" height="52" stroke="#ffffff" stroke-width="1.2" fill="none" />
+    <rect x="1" y="1" width="246" height="50" stroke="#8a8a8c" stroke-width="0.8" fill="none" />
+    
+    <text x="10" y="20" font-family="'Courier New', Courier, monospace" font-size="10" font-weight="bold" fill="#ff007f">C:\LANG&gt; type details.txt</text>
+    <text x="10" y="38" font-family="'Courier New', Courier, monospace" font-size="10" fill="#ffffff">Enfoque: Software y Automatización</text>
+  </g>
+</svg>
